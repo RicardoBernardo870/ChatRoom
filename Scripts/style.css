@@ -53,6 +53,7 @@ body {
   background-image: url(../assets/pexels-sound-on-3756879.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  height: 100%;
 }
 
 @keyframes fadein {
