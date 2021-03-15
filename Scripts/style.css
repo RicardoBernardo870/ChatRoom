@@ -8,6 +8,12 @@
   color: white;
   outline: none !important;
   box-shadow: none !important;
+  
+}
+
+.btn span {
+  margin-left: 10px ;
+
 }
 .btn:focus {
   outline: none !important;
@@ -29,9 +35,12 @@
 
 .chat-rooms {
   padding: 10px;
+  
+  
 }
 .chat-rooms .btn {
   margin-top: 10px;
+  
 }
 
 .chat-window {
@@ -52,8 +61,8 @@
 body {
   background-image: url(../assets/pexels-sound-on-3756879.jpg);
   background-size: cover;
-  background-repeat: no-repeat;
-  height: 100%;
+  
+ 
 }
 
 @keyframes fadein {
@@ -67,4 +76,34 @@ body {
 
 .new-name {
   margin-top: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .container1 {
+    max-width: 300px;
+  }
+
+  .btn {
+    width: 200px;
+    margin-right: 10px;
+    
+  }
+
+  .btn i {
+    display: initial;
+    }
+
+    .chat-rooms {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+  h1 {
+    display: none;
+  }
+
+  .btn span {
+    margin-left: 10px;
+  }
 }
