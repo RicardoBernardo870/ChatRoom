@@ -18,6 +18,8 @@ const setupUI = (user) => {
         loggedOutLinks.forEach(item => item.style.display = 'none');
     } else {
         accountDetails.innerHTML = '';
+        loggedInLinks.forEach(item => item.style.display = 'none');
+        loggedOutLinks.forEach(item => item.style.display = 'block');
         
     
     }
