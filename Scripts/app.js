@@ -17,7 +17,8 @@ const setupUI = (user) => {
         loggedInLinks.forEach(item => item.style.display = 'Block');
         loggedOutLinks.forEach(item => item.style.display = 'none');
     } else {
-       
+        accountDetails.innerHTML = '';
+        
     
     }
 }
