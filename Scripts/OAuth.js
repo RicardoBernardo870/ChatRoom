@@ -8,14 +8,13 @@ const chat = document.querySelector('.chat-list');
 
 auth.onAuthStateChanged(user => {
     if (user) {
-      console.log(user)
      setupUI(user);
      chatroom.getChats(data => chatUI.render(data));
      chat.innerHTML = ''
        
         
     } else {
-      console.log('user is logged out')
+     
       setupUI();
       chat.innerHTML = 'LOGIN TO SEE CHAT';
       
