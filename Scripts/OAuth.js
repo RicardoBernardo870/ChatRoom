@@ -2,6 +2,9 @@ const signupForm = document.querySelector('#signup-form');
 const logout = document.querySelector('#logout');
 const login = document.querySelector('#login-form');
 const chat = document.querySelector('.chat-list');
+const input = document.querySelector('.new-chat');
+const inputG = document.querySelector('.new-name');
+const chatW = document.querySelector('#myDIV');
 
 
 
@@ -10,13 +13,18 @@ auth.onAuthStateChanged(user => {
     if (user) {
      setupUI(user);
      chatroom.getChats(data => chatUI.render(data));
-     chat.innerHTML = ''
+     chatW.style.display = ''
+     input.style.display = ''
+     inputG.style.display = ''
        
         
     } else {
      
       setupUI();
-      chat.innerHTML = 'LOGIN TO SEE CHAT';
+      input.style.display = 'none'
+      inputG.style.display = 'none'
+      chatW.style.display = 'none'
+     
       
     
         

@@ -2,18 +2,21 @@
   max-width: 600px;
   margin: auto;
 }
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
 
 .btn {
   background: #f7a714;
   color: white;
   outline: none !important;
   box-shadow: none !important;
-  
 }
 
 .btn span {
-  margin-left: 10px ;
-
+  margin-left: 10px;
 }
 .btn:focus {
   outline: none !important;
@@ -35,12 +38,9 @@
 
 .chat-rooms {
   padding: 10px;
-  
-  
 }
 .chat-rooms .btn {
   margin-top: 10px;
-  
 }
 
 .chat-window {
@@ -58,11 +58,17 @@
   animation: fadein 2s;
 }
 
+.inline {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 30px;
+}
+
 body {
   background-image: url(../assets/pexels-sound-on-3756879.jpg);
+  background-repeat: no-repeat;
   background-size: cover;
-  
- 
+  height: 100vh;
 }
 
 @keyframes fadein {
@@ -84,20 +90,22 @@ body {
   }
 
   .btn {
-    width: 200px;
+    width: 100px;
     margin-right: 10px;
-    
   }
 
   .btn i {
     display: initial;
-    }
+  }
+  .inline {
+    justify-content: center;
+  }
 
-    .chat-rooms {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-    }
+  .chat-rooms {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
 
   h1 {
     display: none;

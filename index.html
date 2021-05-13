@@ -17,27 +17,7 @@
 </head>
 <body>
     <!-- NAVBAR -->
-    <nav class="z-depth-0 orange lighten-3">
-        <div class="nav-wrapper container">
-            
-          
-            <ul id="nav-mobile" class="right" >
-                <li class="logged-in" style="display: none;">
-                    <a href="#" class="black-text modal-trigger" data-target="modal-account">Account</a>
-                </li>
-                <li class="logged-in" style="display: none;">
-                    <a href="#" class="black-text" id="logout">Logout</a>
-                </li>
-                 <li class="logged-out" style="display: none;">
-                    <a href="#" class="black-text modal-trigger" data-target="modal-login">Login</a>
-                </li>
-                <li class="logged-out" style="display: none;">
-                    <a href="#" class="black-text modal-trigger" data-target="modal-signup">Sign up</a>
-                </li>
-                </span>
-            </ul>
-        </div>
-    </nav>
+
 
     <!-- SIGN UP MODAL -->
     <div id="modal-signup" class="modal">
@@ -82,17 +62,39 @@
             <div class="account-details"></div>
         </div>
     </div>
+    <div class="container">
+        <ul id="nav-mobile" class="inline">
+            <li class="logged-in" style="display: none;">
+                <a href="#" class="black-text waves-effect waves-light btn modal-trigger"
+                    data-target="modal-account">Account</a>
+            </li>
+            <li class="logged-in" style="display: none;">
+                <a href="#" class="black-text waves-effect waves-light btn red" id="logout">Logout</a>
+            </li>
+            <li class="logged-out" style="display: none;">
+                <a href="#" class="black-text waves-effect waves-light white btn modal-trigger"
+                    data-target="modal-login">Login</a>
+            </li>
+            <li class="logged-out" style="display: none;">
+                <a href="#" class="black-text waves-effect waves-light btn modal-trigger" data-target="modal-signup">Sign
+                    up</a>
+            </li>
+            </span>
+        </ul>
+    </div>
 
 
 <!-- container & title -->
+
 <div id="myDIV" class="container1 show my-4">
     <h1 class="center-align">Chat Room</h1>
+   
     
 
 
 <!-- buttons for chatrooms -->
 <div class="chat-rooms mb-3 center-align">
-    
+  
     
 </div>
 
@@ -100,6 +102,7 @@
 
 <!-- chat list / window -->
 <div class="chat-window">
+    
     <ul class="chat-list list-group"></ul>
 </div>
 
